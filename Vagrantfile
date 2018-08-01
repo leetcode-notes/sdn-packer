@@ -10,6 +10,7 @@ Vagrant.configure(2) do |config|
       v.customize ["modifyvm", :id, "--nicpromisc2","allow-all"]
       v.memory= 2048
       v.cpu = 2
+    end
 	end
 	
 end
