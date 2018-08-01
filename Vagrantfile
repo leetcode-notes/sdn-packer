@@ -6,6 +6,10 @@ Vagrant.configure(2) do |config|
 		d.vm.provision :shell, path: "scripts/java8-oracle.sh"
 		d.vm.provision :shell, path: "scripts/mininet.sh"
 		d.vm.provision :shell, path: "scritps/onos.sh"
+    d.vm.provider "virtialbox" do |v|
+      v.customize ["modifyvm", :id, "--nicpromisc2","allow-all"]
+      v.memory= 2048
+      v.cpu = 2
 	end
 	
 end
