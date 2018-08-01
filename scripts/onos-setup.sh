@@ -1,4 +1,4 @@
-onos_version=${1}
+onos_version=1.11.0
 
 function usage {
 	echo "Usage: onos-setup <onos-version>" >&2
